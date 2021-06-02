@@ -56,7 +56,7 @@ verify                Verifies contract on Etherscan
 You can get detailed options of the task like this:
 
 ```
-npx hardhat allow --help
+npx hardhat mint --help
 ```
 
 You can simply run the task like this:
