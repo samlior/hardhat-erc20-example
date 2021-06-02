@@ -1,5 +1,6 @@
 require('@nomiclabs/hardhat-waffle')
 require('@nomiclabs/hardhat-etherscan')
+require('@nomiclabs/hardhat-truffle5')
 require('hardhat-deploy')
 require('hardhat-deploy-ethers')
 require('./tasks')
