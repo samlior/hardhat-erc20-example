@@ -48,7 +48,7 @@ module.exports = {
     mainnet: {
       url: `https://mainnet.infura.io/v3/${process.env.INFURA_API_KEY}`,
       accounts,
-      gasPrice: 120 * 1000000000,
+      gasPrice: 1e11,
       chainId: 1,
     },
     hardhat: {
@@ -67,7 +67,7 @@ module.exports = {
       live: true,
       saveDeployments: true,
       tags: ['staging'],
-      gasPrice: 5000000000,
+      gasPrice: 1e11,
       gasMultiplier: 2,
     },
     rinkeby: {
@@ -77,7 +77,7 @@ module.exports = {
       live: true,
       saveDeployments: true,
       tags: ['staging'],
-      gasPrice: 5000000000,
+      gasPrice: 1e11,
       gasMultiplier: 2,
     },
     goerli: {
@@ -87,7 +87,7 @@ module.exports = {
       live: true,
       saveDeployments: true,
       tags: ['staging'],
-      gasPrice: 5000000000,
+      gasPrice: 1e11,
       gasMultiplier: 2,
     },
     kovan: {
@@ -97,7 +97,7 @@ module.exports = {
       live: true,
       saveDeployments: true,
       tags: ['staging'],
-      gasPrice: 20000000000,
+      gasPrice: 1e11,
       gasMultiplier: 2,
     },
     bsc: {
@@ -131,6 +131,13 @@ module.exports = {
       saveDeployments: true,
       tags: ['staging'],
       gasMultiplier: 2,
+    },
+    gxc2: {
+      url: 'http://192.168.1.126:12358',
+      accounts,
+      chainId: 12358,
+      live: true,
+      saveDeployments: true,
     },
   },
   paths: {
