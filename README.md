@@ -19,13 +19,13 @@ export ETHERSCAN_KEY=xxx
 
 ## Install
 
-```
+```sh
 npm i
 ```
 
 ## Compile
 
-```
+```sh
 npm run build
 ```
 
@@ -33,13 +33,13 @@ npm run build
 
 ### Deploy to mainnet
 
-```
+```sh
 npm run deploy:mainnet
 ```
 
 ### Deploy to localhost
 
-```
+```sh
 npm run node
 ```
 
@@ -55,22 +55,28 @@ verify                Verifies contract on Etherscan
 
 You can get detailed options of the task like this:
 
-```
+```sh
 npx hardhat mint --help
 ```
 
 You can simply run the task like this:
 
-```
+```sh
 npx hardhat --network localhost balance --account 0x...abc
 npx hardhat --network localhost mint --account 0x...abc
+```
+
+## Test
+
+```sh
+npm run test
 ```
 
 ## Verify
 
 **notice: please first make sure you can access [api.etherscan.io](https://api.etherscan.io)**
 
-```
+```sh
 npx hardhat verify --network mainnet 0x...abc "LV Coin" "LV" "18"
 ```
 
